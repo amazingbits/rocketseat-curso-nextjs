@@ -5,7 +5,10 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Devstore',
+  title: {
+    template: '%s | devstore',
+    default: 'devstore',
+  },
   description:
     'Curso da Rocketseat com fundamentos e execução do NextJS 13, com a adição do Next App Router.',
 }
